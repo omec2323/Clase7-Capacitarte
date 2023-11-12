@@ -1,0 +1,151 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&family=Source+Code+Pro:ital,wght@1,200&display=swap');
+
+/* VARIABLES */
+:root{
+    /* Fuentes */
+    --fuente-titulos:'Roboto', cursive;
+    --fuente-textos:'Open+Sans';
+    --fuente-titulos2:'Edu TAS Beginner'
+    --fuente-textos:'Josefin Sans';
+
+    /* Colores */
+    --color-alpha:#6499E9;
+    --color-bravo:#9EDDFF;
+    --color-charlie:#A6F6FF;
+    --color-delta:#BEFFF7;
+    --color-echo:#0F0F0F;
+    --color-foxtrox:232D3F;
+    --color-golf:#005B41;
+    --color-hotel:#008170;
+
+}
+
+/* Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--color-bravo);
+}
+/* Animaciones */
+@keyframes titulos {
+    0%{
+      transform: translate(-100px);
+      animation-duration: 1seg;
+    }
+}
+.titulo{
+    font-family
+}
+
+
+header{ background-color:#008170;
+    height:10vh;
+    /* Practicar con los div para centrar */
+      display:flex; /* Para usar justify y aling debo activar este */
+      justify-content:center; /* Alinea los elementos en el eje x */
+      align-items:center; /* Alinea los elementos en el eje y */
+      text-shadow:black 0 0 15px;
+      box-shadow:black 0 10px 15px;
+    }
+
+header h1{ background-color:var(--color-delta)
+  
+}
+    
+
+.flex-container{
+    height: 100vh;
+    background-color:radial-gradient(circle farthest-corner at 10% 20% rgba (37,145,251,0.98)0.1% rgba(0,7,128,1)99.8%);
+    height: 50vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around; /* ubicacion de los cajones, evelyn mismo espacio a los lados, center,, space-betwen abarca todo espacio */
+/*  Si quiero ubicar las cajas al final es align-items:flex-end; */
+}
+
+
+.caja{
+    height: 100px;
+    width: 100px;
+    border: 1px solid yellow;
+  display: inline-block;
+}
+
+.roja{
+    background-color: red;
+}
+
+.verde{
+    background-color: green;
+}
+.azul{
+    background-color:blue;
+    border-radius: 30px;
+}
+
+.violeta{
+    background-color:violet;
+}
+
+footer{
+    background-color:#183153;
+    color: white;
+    padding: 0 10%;
+    font-size: large;
+
+    display: flex;
+    flex-flow: column;
+    font-family: var(--fuente-textos);
+    row-gap: 50px;
+}
+
+.footer-hero{
+display: flex;
+flex-flow: column;
+gap: 20px;
+}
+
+.footer-hero{
+    font: size 2rem;
+    }
+
+
+
+.adicional{
+    display: flex;
+    gap: 15vw;
+}
+
+.adicional div{
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+}
+.adicional div p{
+    color:rgb(73,118,180)
+    font-weight:bolder;
+}
+
+  .adicional div a,.data div a{   /* aqui realizo llamado multiple ya que los estilos serian iguales y los distingo luego de la coma */
+    color:white;
+    text-decoration: none;
+}
+
+.data div {
+    display: flex;
+    gap: 15px;
+}
+
+.data p{
+   color:gray;
+}
+
+
